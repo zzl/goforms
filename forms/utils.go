@@ -466,25 +466,25 @@ func MessageBox(text string, title string) {
 }
 
 func Alert(text string) {
-	MessageBox(text, "提示")
+	MessageBox(text, "Alert")
 }
 
 func Info(text string) {
-	MessageBoxEx(HWndActive, text, "提示", win32.MB_ICONINFORMATION)
+	MessageBoxEx(HWndActive, text, "Information", win32.MB_ICONINFORMATION)
 }
 
 func Warn(text string) {
-	MessageBoxEx(HWndActive, text, "提示", win32.MB_ICONEXCLAMATION)
+	MessageBoxEx(HWndActive, text, "Warning", win32.MB_ICONEXCLAMATION)
 }
 
 func Confirm(text string) bool {
-	ret, _ := MessageBoxEx(HWndActive, text, "提示",
+	ret, _ := MessageBoxEx(HWndActive, text, "Confirmation",
 		win32.MB_ICONQUESTION|win32.MB_OKCANCEL)
 	return ret == win32.IDOK
 }
 
 func ConfirmYesNoCancel(text string) win32.MESSAGEBOX_RESULT {
-	ret, _ := MessageBoxEx(HWndActive, text, "提示",
+	ret, _ := MessageBoxEx(HWndActive, text, "Confirmation",
 		win32.MB_ICONQUESTION|win32.MB_YESNOCANCEL|win32.MB_DEFBUTTON3)
 	return ret
 }

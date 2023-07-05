@@ -101,3 +101,7 @@ func (this *CustomControlObject) WinProc(win *WindowObject, m *Message) error {
 func (this *CustomControlObject) GetWindowClass() string {
 	return customControlClass
 }
+
+func (this *CustomControlObject) GetContainer() Container {
+	return this.GetParent().(Container)
+}

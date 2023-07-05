@@ -335,3 +335,8 @@ func (this *CustomWindowObject) OnBubbleMessage(msg *Message) {
 		parent.OnBubbleMessage(msg)
 	}
 }
+
+// EnsureCustomWndProc implements WindowSpi.EnsureCustomWndProc
+func (this *CustomWindowObject) EnsureCustomWndProc() {
+	//nop
+}

@@ -21,3 +21,5 @@
 go.work
 
 *.syso
+_test/
+_bak/

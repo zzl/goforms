@@ -111,25 +111,6 @@ func (this *EditObject) OnReflectMessage(msg *Message) {
 			msg.SetHandledWithResult(hbr)
 			return
 		}
-		//
-		//msg.Result = hbr
-		//msg.Handled = false
-		//msg.SetHandledWithResult(0)
-		//return
-		//if backColor != colors.Null && backColor != colors.Transparent {
-		//hdc := win32.HDC(msg.WParam)
-		//win32.SetBkMode(hdc, win32.TRANSPARENT)
-		//oldHbr := this.GetData(Data_BackColorBrush)
-		//if oldHbr != nil {
-		//	win32.DeleteObject(oldHbr.(win32.HBRUSH))
-		//}
-		//hbr := win32.CreateSolidBrush(win32.RGB(255, 255, 0))
-		//this.SetData(Data_BackColorBrush, hbr)
-		//msg.Result = hbr
-		//msg.Handled = true
-		return
-		//}
-		//utils
 	}
 	this.super.OnReflectMessage(msg)
 }

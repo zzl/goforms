@@ -11,8 +11,8 @@ type DropdownPopupBorder interface {
 }
 
 type DropdownPopupBorderObject struct {
-	WindowObject
-	super *WindowObject
+	SimpleWindowObject
+	super *SimpleWindowObject
 
 	Color   win32.COLORREF
 	Visible bool
@@ -58,11 +58,6 @@ func (this *DropdownPopupBorderObject) WinProc(win *WindowObject, m *Message) er
 		return m.SetHandledWithResult(NegativeOne)
 	}
 	return win.CallOriWndProc(m)
-}
-
-func (this *DropdownPopupBorderObject) GetWindowClass() string {
-	EnsurePlainWindowClassRegistered()
-	return "goforms.plainwindow"
 }
 
 func (this *DropdownPopupBorderObject) GetDefaultStyle() WINDOW_STYLE {
