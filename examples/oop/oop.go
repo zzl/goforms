@@ -112,7 +112,7 @@ func (this *TigerObject) GetVoice() string {
 
 func (this *TigerObject) Greet() {
 	this.super.Greet()
-	this.Say("Wellcome to the tiger world!")
+	this.Say("Welcome to the tiger world!")
 }
 
 // main
@@ -136,6 +136,6 @@ func main() {
 	  Meow! Hello!
 	  Woof! Hello!
 	  Roar~~! Hello!
-	  Roar~~! Wellcome to the tiger world!
+	  Roar~~! Welcome to the tiger world!
 	*/
 }
