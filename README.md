@@ -9,14 +9,24 @@ It provides similar functionality to WinForms.
 - It features a layout system.
 - It includes a drawing package based on the gdiplus technology.
 
-## Features
+## Design Principals
 
-- **Lightweight Functions:** UI functions are designed as simple wrappers
+- **Lightweight Functions:** UI functions should be simple wrappers
   over the native parts of the system.
-- **Lightweight Objects:** UI objects do not maintain unnecessary state data, 
-  as long as they are maintained in the underlying native objects.
-- **Easy to use API:** Carefully designed API to help calling them in Go smooth and concise.   
-- **Easy to extend:** Coded in object-oriented style, allowing for inheritance and overriding of components.
+- **Lightweight Objects:** UI objects should not maintain unnecessary state data if 
+  they are already contained in the underlying native components.
+- **Easy to use API:** The API should be designed to accommodate the syntax of Go,  
+  making function calls smooth and concise.   
+- **Easy to extend:** The code should follow an object-oriented style, 
+  allowing for component inheritance and overriding.
   > While OOP may not be widely embraced, particularly within the Go community, 
   > I think it offers a suitable approach for this framework.
+
+## Screenshots
+
+* Screenshot of the fileexplore example
+![fileexplore.png](https://github.com/zzl/goforms/blob/assets/fileexplorer.png?raw=true)
+
+* Screen recording of the goforms-designer app (still in early development)
+![designer.gif](https://github.com/zzl/goforms/blob/assets/designer.gif?raw=true)
 
