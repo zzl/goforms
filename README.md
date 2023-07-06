@@ -22,6 +22,10 @@ It provides similar functionality to WinForms.
   > While OOP may not be widely embraced, particularly within the Go community, 
   > I think it offers a suitable approach for this framework.
 
+## Development Requirements
+- Windows 7+
+- **Go 1.21+**
+
 ## Screenshots
 
 * Screenshot of the fileexplore example
